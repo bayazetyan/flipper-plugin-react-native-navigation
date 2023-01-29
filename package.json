@@ -1,0 +1,57 @@
+{
+  "$schema": "https://fbflipper.com/schemas/plugin-package/v2.json",
+  "name": "flipper-plugin-react-native-navigation",
+  "id": "flipper-plugin-react-native-navigation",
+  "version": "0.0.1",
+  "pluginType": "client",
+  "main": "dist/bundle.js",
+  "flipperBundlerEntry": "src/index.tsx",
+  "license": "MIT",
+  "keywords": [
+    "flipper-plugin"
+  ],
+  "icon": "navicon",
+  "title": "React Native Navigation",
+  "scripts": {
+    "lint": "flipper-pkg lint",
+    "prepack": "flipper-pkg lint && flipper-pkg bundle",
+    "build": "flipper-pkg bundle",
+    "watch": "flipper-pkg bundle --watch",
+    "test": "jest --no-watchman"
+  },
+  "peerDependencies": {
+    "@emotion/styled": "latest",
+    "antd": "latest",
+    "flipper-plugin": "^0.176.1",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "latest",
+    "@babel/preset-typescript": "latest",
+    "@emotion/styled": "latest",
+    "@testing-library/react": "latest",
+    "@types/jest": "latest",
+    "@types/lodash.merge": "^4.6.7",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "antd": "latest",
+    "babel-loader": "^9.1.0",
+    "flipper-pkg": "latest",
+    "flipper-plugin": "latest",
+    "jest": "latest",
+    "jest-mock-console": "latest",
+    "lodash.merge": "^4.6.2",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-native-navigation": "^7.30.6",
+    "ts-node": "^10.9.1",
+    "typescript": "latest"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "setupFiles": [
+      "<rootDir>/jest-setup.ts"
+    ]
+  }
+}
